@@ -1,0 +1,9 @@
+# config.yaml - YOLOv8 training config
+# TODO : comment out followind to mention why used line by line
+model: yolov8n.pt          
+data: ./data/data.yaml    
+epochs: 50                
+img_size: 640             
+save_dir: runs/train      
+run_name: custom         
+output_model: my_model.pt  
