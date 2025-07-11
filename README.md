@@ -13,20 +13,34 @@ A complete object detection solution using [Ultralytics YOLOv8](https://github.c
 ---
 
 <p align="center">
-  <!-- Framework -->
-  <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/YOLOv8-Object%20Detection-00FFFF?style=for-the-badge" />
-
-  <!-- Annotation -->
-  <img src="https://img.shields.io/badge/Label%20Studio-Data%20Annotation-FF6B6B?style=for-the-badge&logo=label-studio&logoColor=white" />
-
-  <!-- Processing -->
-  <img src="https://img.shields.io/badge/OpenCV-Image%20Processing-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
-  <img src="https://img.shields.io/badge/Pandas-Data%20Handling-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-
-  <!-- Deployment -->
-  <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <!-- Core Technologies -->
+  <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/YOLOv8-00FFFF?style=for-the-badge&logo=ultralytics&logoColor=black" />
+  
+  <!-- Data Processing -->
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
+  
+  <!-- Annotation & Visualization -->
+  <img src="https://img.shields.io/badge/Label_Studio-FF6B6B?style=for-the-badge&logo=label-studio&logoColor=white" />
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" />
+  <img src="https://img.shields.io/badge/Seaborn-5C8EBC?style=for-the-badge" />
+  
+  <!-- Deployment & Monitoring -->
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=black" />
+  
+  <!-- Performance -->
+  <img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+  <img src="https://img.shields.io/badge/TensorRT-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+  
+  <!-- Project Info -->
+  <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/contributions-welcome-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/release-v1.0.0-blue?style=for-the-badge" />
 </p>
 
 ---
