@@ -115,8 +115,7 @@ project-root/
 ## 📸 Sample Outputs
 
 <p align="center">
-  <img src="assets/training_curve.png" alt="Training Metrics" width="45%" />
-  <img src="assets/detection_example.png" alt="Detection Example" width="45%" />
+  <img src="https://github.com/shivamprasad1001/yolo-custom-trainer/blob/main/demo/yolo-custom-trainer%20fig-01.png" alt="Sample Image" width="45%" />
 </p>
 
 ---
