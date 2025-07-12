@@ -57,6 +57,13 @@ This pipeline provides a complete workflow for custom object detection:
 6. **Deployment**: Ready-to-use model output
 
 ---
+## 📸 Sample Outputs
+
+<p align="center">
+  <img src="demo/yolo-custom-trainer%20fig-01.png" alt="Sample Image" width="45%" />
+</p>
+
+---
 
 ## 🌟 Key Features
 
@@ -112,13 +119,7 @@ project-root/
 
 ---
 
-## 📸 Sample Outputs
 
-<p align="center">
-  <img src="https://github.com/shivamprasad1001/yolo-custom-trainer/blob/main/demo/yolo-custom-trainer%20fig-01.png" alt="Sample Image" width="45%" />
-</p>
-
----
 
 ## 🚀 Getting Started
 
