@@ -121,6 +121,8 @@ project-root/
 
 ```bash
 conda activate yolo-env1
+```
+```bash
 pip install ultralytics opencv-python numpy
 ```
 
