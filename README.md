@@ -119,6 +119,69 @@ project-root/
 
 ---
 
+```bash
+conda activate yolo-env1
+pip install ultralytics opencv-python numpy
+```
+
+---
+
+## 📌 Script Arguments
+
+The script takes the following arguments:
+
+| Argument       | Required | Description                                                                                                   |
+| -------------- | -------- | ------------------------------------------------------------------------------------------------------------- |
+| `--model`      | ✅ Yes    | Path to YOLO model file (`.pt`), e.g., `runs/detect/train/weights/best.pt`                                    |
+| `--source`     | ✅ Yes    | Input source: image file (`test.jpg`), folder (`./images/`), video file (`video.mp4`), or USB webcam (`usb0`) |
+| `--thresh`     | ❌ No     | Minimum confidence threshold for detections (default: `0.5`)                                                  |
+| `--resolution` | ❌ No     | Output resolution in `WxH` format (e.g., `640x480`). Default is source resolution.                            |
+| `--record`     | ❌ No     | Record results (only works with video or webcam). Saves to `demo1.avi`. Requires `--resolution`.              |
+
+---
+
+## 📌 Usage Examples
+
+### 1. Run on a single image
+
+```bash
+python yolo_detect.py --model runs/detect/train/weights/best.pt --source test.jpg
+```
+
+### 2. Run on a folder of images
+
+```bash
+python yolo_detect.py --model runs/detect/train/weights/best.pt --source ./images/
+```
+
+### 3. Run on a video file
+
+```bash
+python yolo_detect.py --model runs/detect/train/weights/best.pt --source video.mp4
+```
+
+### 4. Run on a USB webcam
+
+```bash
+python yolo_detect.py --model runs/detect/train/weights/best.pt --source usb0 --resolution 640x480
+```
+
+### 5. Record results from webcam
+
+```bash
+python yolo_detect.py --model runs/detect/train/weights/best.pt --source usb0 --resolution 640x480 --record
+```
+
+---
+
+## 📌 Controls During Inference
+
+* Press **`q`** → Quit
+* Press **`s`** → Pause inference
+* Press **`p`** → Save current frame as `capture.png`
+
+---
+
 
 
 ## 🚀 Getting Started
