@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# JetBrains / VS Code Settings
+.idea/
+.vscode/
+
+# Project-specific Model & Zip files
+*.pt
+*.onnx
+*.engine
+my_model.zip
+
+# Video / image outputs and recordings
+*.avi
+*.mp4
+*.png
+*.jpg
+!my_model/test.jpg
+
+# User data directories
+object_detection_TG-Bot/data/
+data/
+labeled_data/

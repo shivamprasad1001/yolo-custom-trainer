@@ -1,9 +1,22 @@
 # config.yaml - YOLOv8 training config
-# TODO : comment out followind to mention why used line by line
+
+# The base pre-trained model weights to start training from (e.g. YOLOv8 Nano)
 model: yolov8n.pt          
+
+# Path to the dataset YAML file defining training/validation image sets and class names
 data: ./data/data.yaml    
+
+# Number of complete passes of training data through the model during training
 epochs: 50                
+
+# Image size (resolution) that input images are resized to during training/validation
 img_size: 640             
+
+# Base directory where training runs, logs, checkpoints, and weights are saved
 save_dir: runs/train      
+
+# Name of the subdirectory for this training run inside the save_dir
 run_name: custom         
-output_model: my_model.pt  
+
+# Filename/path where the final best trained weights will be saved/moved to
+output_model: my_model.pt

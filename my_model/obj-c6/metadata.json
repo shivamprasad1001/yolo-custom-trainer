@@ -1,0 +1,10 @@
+{
+  "id": "shivamprasad1001/obj-c6",
+  "title": "YOLOv8 Custom Object Detection Model - obj-c6",
+  "description": "This is a YOLOv8 object detection model trained on custom data for detecting multiple object classes. It can be used for real-time detection and inference tasks.",
+  "licenses": [
+    {
+      "name": "CC0-1.0"
+    }
+  ]
+}

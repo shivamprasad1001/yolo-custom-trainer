@@ -1,0 +1,5 @@
+python-telegram-bot>=22.0
+ultralytics>=8.2.103
+opencv-python
+numpy
+python-dotenv

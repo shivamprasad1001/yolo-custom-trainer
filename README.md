@@ -91,18 +91,18 @@ graph TD
 ```text
 project-root/
 ├── config.yaml                  # Training configuration
-├── prepare_yolo_dataset.py      # Dataset preparation
-├── training/
-│   ├── train.py                 # Training script
-│   └── my_model.pt             # Output model
-├── evaluate.py                  # Evaluation script
-├── data/                       # Organized dataset
-│   ├── train/images/           # Training images
-│   ├── train/labels/           # Training labels
-│   ├── val/images/             # Validation images
-│   ├── val/labels/             # Validation labels
-│   └── data.yaml               # Dataset config
-└── runs/                       # Training outputs
+├── prepare_yolo_dataset.py      # Dataset preparation script
+├── train.py                     # Model training execution script
+├── evaluate.py                  # Model evaluation script
+├── verify.py                    # Environment/model layers verifier
+├── data/                        # Organized dataset (train/val splits)
+├── my_model/                    # Custom weights & local inference tools
+│   ├── my_model.pt              # Trained YOLOv8 model weights
+│   ├── yolo_detect.py           # Real-time multi-mode inference script
+│   └── README.md                # Documentation of model & local inference modes
+└── object_detection_TG-Bot/     # Deployment Telegram bot codebase
+    ├── bot.py                   # Main bot execution file (PTB 22.x)
+    └── requirements.txt         # Bot dependencies
 ```
 
 ---
@@ -147,31 +147,31 @@ The script takes the following arguments:
 ### 1. Run on a single image
 
 ```bash
-python yolo_detect.py --model runs/detect/train/weights/best.pt --source test.jpg
+python my_model/yolo_detect.py --model my_model/my_model.pt --source my_model/test.jpg
 ```
 
 ### 2. Run on a folder of images
 
 ```bash
-python yolo_detect.py --model runs/detect/train/weights/best.pt --source ./images/
+python my_model/yolo_detect.py --model my_model/my_model.pt --source ./images/
 ```
 
 ### 3. Run on a video file
 
 ```bash
-python yolo_detect.py --model runs/detect/train/weights/best.pt --source video.mp4
+python my_model/yolo_detect.py --model my_model/my_model.pt --source my_model/test-vdo.mp4
 ```
 
 ### 4. Run on a USB webcam
 
 ```bash
-python yolo_detect.py --model runs/detect/train/weights/best.pt --source usb0 --resolution 640x480
+python my_model/yolo_detect.py --model my_model/my_model.pt --source usb0 --resolution 640x480
 ```
 
 ### 5. Record results from webcam
 
 ```bash
-python yolo_detect.py --model runs/detect/train/weights/best.pt --source usb0 --resolution 640x480 --record
+python my_model/yolo_detect.py --model my_model/my_model.pt --source usb0 --resolution 640x480 --record
 ```
 
 ---
@@ -211,13 +211,28 @@ python prepare_yolo_dataset.py
 ### 🏋️ Training
 Edit `config.yaml` then:
 ```bash
-python training/train.py
+python train.py
 ```
 
 ### 📊 Evaluation
 ```bash
 python evaluate.py
 ```
+
+### 🤖 Telegram Bot Deployment
+Deploy the Telegram bot for real-time inference on Telegram:
+1. Navigate to the bot directory:
+   ```bash
+   cd object_detection_TG-Bot
+   ```
+2. Create a `.env` file containing your Telegram API token:
+   ```env
+   BOT_TOKEN=your_telegram_bot_token_here
+   ```
+3. Run the bot:
+   ```bash
+   python bot.py
+   ```
 
 ---
 
@@ -255,9 +270,9 @@ name: custom             # Run name
 
 ## 👨‍💻 Author
 
-**Shivam Prasad**  
-[GitHub](https://github.com/shivamprasad1001) | 
-[LinkedIn](https://www.linkedin.com/in/shivamprasad1001)
+**Shivam Prasad**
+* 🌐 **Portfolio**: [shivamprasad1001.in](https://shivamprasad1001.in)
+* 🔗 **LinkedIn**: [shivamprasad1001](https://www.linkedin.com/in/shivamprasad1001)
 
 ---
 
