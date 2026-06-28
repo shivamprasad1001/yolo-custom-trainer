@@ -164,8 +164,7 @@ logger = logging.getLogger(__name__)
 # Resolve the paths relative to the current file
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data"
-MODEL_PATH = BASE_DIR.parent / "my_model" / "train" / "weights" / "best.pt"
-
+MODEL_PATH = BASE_DIR / "best.pt"
 # Create data directory if it doesn't exist
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
