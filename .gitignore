@@ -22,9 +22,11 @@ venv.bak/
 
 # Project-specific Model & Zip files
 *.pt
+!my_model/my_model.pt
 *.onnx
 *.engine
 my_model.zip
+
 
 # Video / image outputs and recordings
 *.avi
